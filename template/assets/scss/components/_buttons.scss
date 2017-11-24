@@ -9,10 +9,17 @@
   background-color: $highlight;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 .btn-grp {
   border-radius: 0;
   background-color: #fff;
   color: #b3b3b3;
   border: solid 1px #ebebf2;
+}
+.btn {
+  border-radius: 0!important;
 }

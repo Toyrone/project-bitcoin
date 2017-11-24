@@ -34,6 +34,9 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  &.active {
+    border-top: 3px solid #fff;
+  }
   a.nav-link {
     color: $brand-color!important;
     text-transform: uppercase;
@@ -55,4 +58,10 @@
 }
 .row--hero {
   margin-bottom: 124px;
+}
+.chart-wrap {
+  float: right;
+  &:after {
+    clear: both;
+  }
 }
