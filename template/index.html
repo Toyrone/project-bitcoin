@@ -73,32 +73,24 @@
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="buy" role="tabpanel" aria-labelledby="buy-tab">
                 <!-- Form  -->
-                  <form class="flex">
+                  <form id="app" class="flex">
                     <div class="flex-grp btn-group btn-group-lg" role="group">
-                      <button type="button" class="btn btn-grp">BTC</button>
-                      <button type="button" class="btn btn-grp">BTH</button>
-                      <button type="button" class="btn btn-grp">ETH</button>
-                      <button type="button" class="btn btn-grp">LTC</button>
-                      <button type="button" class="btn btn-grp">NEO</button>
+                      <button v-for="(coin, key) in coins" type="button" class="btn btn-grp" v-on:click="selectCoin(key)">{{coin.name}}</button>
                     </div>
                     <div class="form-group">
                       <div class="row">
                         <div class="col-6">
-
-                          <input type="text" class="form-control form-reset" name="amount" value="" placeholder="Amount in currency">
+                          <input type="text" class="form-control form-reset" name="amount" value="" placeholder="Amount in currency" v-model="amount"  v-on:keyup="calculateCryptoValue">
                         </div>
                         <div class="col-6">
-                          <select class="form-control form-reset" name="">
-                            <option value="">USD</option>
-                            <option value="">NGN</option>
-                            <option value="">GHC</option>
-                            <option value="">BRP</option>
+                          <select v-model="currencyIndex" class="form-control form-reset" name="" v-on:change="changeCurrency">
+                            <option v-for="(cur, key) in currencies" :value="key" >{{cur.name}}</option>
                           </select>
                         </div>
                       </div>
                     </div>
                     <div class="form-group pb-16">
-                      <input class="form-control" type="text" name="" value="" placeholder="Amount in cryptocurrency">
+                      <input class="form-control" type="text" name="" value="" placeholder="Amount in cryptocurrency"  v-model="currentUnit" v-on:keyup="changeCurFromCrypto">
                     </div>
                     <!-- Button to buy -->
                     <button class="btn btn-search">Proceed</button>
@@ -108,11 +100,7 @@
               <div class="tab-pane fade" id="sell" role="tabpanel" aria-labelledby="sell-tab">
                 <form class="flex">
                   <div class="flex-grp btn-group btn-group-lg" role="group">
-                    <button type="button" class="btn btn-grp">BTC</button>
-                    <button type="button" class="btn btn-grp">BTH</button>
-                    <button type="button" class="btn btn-grp">ETH</button>
-                    <button type="button" class="btn btn-grp">LTC</button>
-                    <button type="button" class="btn btn-grp">NEO</button>
+                    <button v-for="coin in coins" type="button" class="btn btn-grp">{{coin.name}}</button>
                   </div>
                   <div class="form-group">
                     <div class="row">
@@ -121,10 +109,8 @@
                       </div>
                       <div class="col-6">
                         <select class="form-control form-reset" name="">
-                          <option value="">USD</option>
-                          <option value="">NGN</option>
-                          <option value="">GHC</option>
-                          <option value="">BRP</option>
+                          <option :selected="true">Select Currency</option>
+                            <option v-for="(cur, key) in currencies" :value="key">{{cur.name}}</option>
                         </select>
                       </div>
                     </div>
@@ -421,8 +407,10 @@
         </div>
       </div>
     </footer>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.8/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
         <script src="assets/vendors/js/vendor/jquery-3.1.1.js"></script>
+        <script src="assets/js/app.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
 
