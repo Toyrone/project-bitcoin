@@ -25,6 +25,7 @@ var app = new Vue({
       let amount = this.coins[this.selectedCoinIndex].usd_value * this.currencies[this.currencyIndex].dollar_rate;
       this.amount = (this.currentUnit === "")? amount : amount * this.currentUnit;
       this.amount = this.amount.toFixed(4);
+      this.amount = (isNaN(this.amount))? 0: this.amount;
 
        if(this.currentUnit === ''){
           this.calculateCryptoValue();
@@ -32,15 +33,22 @@ var app = new Vue({
     },
     calculateCryptoValue: function () {
 
-        this.currentUnit = (this.amount / this.currencies[this.currencyIndex].dollar_rate) / this.coins[this.selectedCoinIndex].usd_value
+      this.currentUnit = (this.amount / this.currencies[this.currencyIndex].dollar_rate) / this.coins[this.selectedCoinIndex].usd_value
+
+      this.currentUnit = (isNaN(this.currentUnit))? 0: this.currentUnit;
+
+
     },
     changeCurFromCrypto: function () {
 
       this.amount = this.coins[this.selectedCoinIndex].usd_value *    this.currencies[this.currencyIndex].dollar_rate * this.currentUnit;
+
+      this.amount = this.amount.toFixed(4);
+      this.amount = (isNaN(this.amount))? 0: this.amount;
     },
     selectCoin: function (coin_index) {
       this.selectedCoinIndex = coin_index;
-      if(this.currencyIndex != ""){
+      if(this.currencyIndex != 0){
         this.cryptoPriceInCurrency()
       }
     },
