@@ -1,0 +1,32 @@
+footer {
+  padding: 48px 72px 24px;
+  background-color: #222;
+}
+.footer-links {
+  color: #fff;
+  font-size: 17px;
+  list-style-type: none;
+  text-transform: uppercase;
+  .link-title {
+    padding-bottom: 30px;
+  }
+}
+.link-list {
+  list-style-type: none;
+  padding: 0;
+  text-transform: none;
+  a {
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.7;
+    line-height: 2em;
+  }
+  p {
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.7;
+    line-height: 2em;
+    margin: 0;
+    line-height: 1.8;
+  }
+}

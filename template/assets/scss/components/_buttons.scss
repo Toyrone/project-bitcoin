@@ -1,0 +1,18 @@
+.btn-default {
+  color: $brand-color;
+  background-color: $highlight;
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 4px;
+}
+.btn-search {
+  background-color: $highlight;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-grp {
+  border-radius: 0;
+  background-color: #fff;
+  color: #b3b3b3;
+  border: solid 1px #ebebf2;
+}

@@ -1,12 +1,5 @@
-$base-font-size: 16px;
-// $brand-color: #b3b3b3;
+@import 'node_modules/normalize-scss/sass/normalize';
 
-@function px-to-rem( $value ) {
-  @return ( $value / $base-font-size ) * 1rem;
-}
+@import 'base/variables';
 
-body {
-  margin: 0;
-  // background: $brand-color;
-  font-size: px-to-rem(20px);
-}
+// @import 'components/buttons';
