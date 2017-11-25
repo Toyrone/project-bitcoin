@@ -20,8 +20,8 @@ input {
 
 .btn-search {
   background-color: #3e98f5;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   height: 50px;
   color: #fff;
   text-transform: uppercase;
@@ -32,8 +32,23 @@ input {
   background-color: #fff;
   color: #b3b3b3;
   border: solid 1px #ebebf2; }
+  .btn-grp:first-child {
+    border-radius: 0; }
+  .btn-grp:last-child {
+    border-radius: 0; }
+  .btn-grp:hover {
+    background-color: #b3b3b3;
+    color: #fff;
+    box-shadow: none;
+    cursor: pointer; }
+  .btn-grp:focus {
+    box-shadow: none; }
+  .btn-grp.active {
+    background-color: #b3b3b3;
+    color: #fff;
+    box-shadow: none; }
 
-.btn {
+.br-0 {
   border-radius: 0 !important; }
 
 .bit-form {
@@ -341,3 +356,7 @@ main {
 
 .pb-16 {
   padding-bottom: 16px !important; }
+
+.flex-c {
+  display: flex;
+  justify-content: center; }

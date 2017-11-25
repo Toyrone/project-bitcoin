@@ -62,20 +62,20 @@
         <div class="col-6">
           <div class="bit-form">
             <!-- <img src="assets/img/group-20.png" alt="BitCoin Graph"> -->
-            <ul class="form-tab" id="myTab" role="tablist">
+            <ul class="form-tab" id="myTab" role="tablist" data-tabs="tabs">
               <li class="">
-                <a class="form-tab" id="buy-tab" data-toggle="tab" href="#buy" role="tab" aria-controls="home" aria-selected="true">Buy</a>
+                <a class="form-tab" name="form-tab" id="buy-tab" href="#buy" role="tab" aria-controls="home">Buy</a>
               </li>
               <li class="">
-                <a class="form-tab active" id="sell-tab" data-toggle="tab" href="#sell" role="tab" aria-controls="profile" aria-selected="false">Sell</a>
+                <a class="form-tab active" name="form-tab" id="sell-tab" href="#sell" role="tab" aria-controls="profile">Sell</a>
               </li>
             </ul>
             <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="buy" role="tabpanel" aria-labelledby="buy-tab">
+              <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="buy-tab">
                 <!-- Form  -->
                   <form class="flex">
                     <div class="flex-grp btn-group btn-group-lg" role="group">
-                      <button type="button" class="btn btn-grp">BTC</button>
+                      <button type="button" class="btn btn-grp active">BTC</button>
                       <button type="button" class="btn btn-grp">BTH</button>
                       <button type="button" class="btn btn-grp">ETH</button>
                       <button type="button" class="btn btn-grp">LTC</button>
@@ -98,44 +98,12 @@
                       </div>
                     </div>
                     <div class="form-group pb-16">
-                      <input class="form-control" type="text" name="" value="" placeholder="Amount in cryptocurrency">
+                      <input class="form-control br-0" type="text" name="" value="" placeholder="Amount in cryptocurrency">
                     </div>
                     <!-- Button to buy -->
-                    <button class="btn btn-search">Proceed</button>
+                    <button class="btn btn-search br-0">Proceed</button>
 
                   </form>
-              </div>
-              <div class="tab-pane fade" id="sell" role="tabpanel" aria-labelledby="sell-tab">
-                <form class="flex">
-                  <div class="flex-grp btn-group btn-group-lg" role="group">
-                    <button type="button" class="btn btn-grp">BTC</button>
-                    <button type="button" class="btn btn-grp">BTH</button>
-                    <button type="button" class="btn btn-grp">ETH</button>
-                    <button type="button" class="btn btn-grp">LTC</button>
-                    <button type="button" class="btn btn-grp">NEO</button>
-                  </div>
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-6">
-                        <input type="text" class="form-control form-reset" name="amount" value="">
-                      </div>
-                      <div class="col-6">
-                        <select class="form-control form-reset" name="">
-                          <option value="">USD</option>
-                          <option value="">NGN</option>
-                          <option value="">GHC</option>
-                          <option value="">BRP</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group pb-16">
-                    <input type="text" name="" value="">
-                  </div>
-                  <!-- Proceed to sell button -->
-                  <button class="btn btn-search">Proceed</button>
-
-                </form>
               </div>
             </div>
           </div>
@@ -330,7 +298,7 @@
         <div class="section-head">
           <h3>media about us</h3>
         </div>
-        <div class="container">
+        <div class="container flex-c">
           <div class="row media-body">
 
             <div class="logo-wrap">
@@ -422,7 +390,7 @@
       </div>
     </footer>
 
-        <script src="assets/vendors/js/vendor/jquery-3.1.1.js"></script>
+        <script src="assets/vendors/js/jquery-1.11.2.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
 

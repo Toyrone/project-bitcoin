@@ -7,8 +7,8 @@
 }
 .btn-search {
   background-color: $highlight;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   height: 50px;
   color: #fff;
   text-transform: uppercase;
@@ -19,7 +19,28 @@
   background-color: #fff;
   color: #b3b3b3;
   border: solid 1px #ebebf2;
+  &:first-child {
+    border-radius: 0;
+  }
+  &:last-child {
+    border-radius: 0;
+  }
+  &:hover {
+    background-color: #b3b3b3;
+    color: #fff;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  &:focus {
+  box-shadow: none;
+  }
+  &.active {
+    background-color: #b3b3b3;
+    color: #fff;
+    box-shadow: none;
+  }
 }
-.btn {
+
+.br-0 {
   border-radius: 0!important;
 }
