@@ -2,6 +2,9 @@
   padding: 42px 72px;
   background-color: $backg-dark;
   color: $brand-color;
+  @media  #{$phone} {
+    padding: 30px;
+  }
 }
 .main-nav {
   background-color:  $backg-dark;
@@ -55,13 +58,29 @@
     text-transform: uppercase;
     padding-bottom: 25px;
   }
+  @media  #{$phone} {
+    margin-top: 40px;
+  }
 }
 .row--hero {
   margin-bottom: 124px;
+  @media  #{$phone} {
+    margin-bottom: 40px
+  }
 }
 .chart-wrap {
   float: right;
+  @media  #{$phone} {
+    float: none;
+    padding-top: 30px;
+  }
   &:after {
     clear: both;
+  }
+  img {
+    @media  #{$phone} {
+      width: 320px;
+      text-align: center;
+    }
   }
 }

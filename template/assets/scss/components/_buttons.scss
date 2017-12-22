@@ -39,6 +39,10 @@
     color: #fff;
     box-shadow: none;
   }
+  @media  #{$phone} {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .br-0 {

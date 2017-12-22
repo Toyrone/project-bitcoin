@@ -25,4 +25,5 @@ gulp.task('default',['sass','browserSync'], function() {
   gulp.watch( 'template/assets/scss/**/*.scss', ['sass'] );
   gulp.watch( 'template/assets/scss/**/*.scss', browserSync.reload);
   gulp.watch( 'template/assets/js/**/*.js', browserSync.reload);
+  gulp.watch( 'template/*.html').on('change', browserSync.reload);
 });

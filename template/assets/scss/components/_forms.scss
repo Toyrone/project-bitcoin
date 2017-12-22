@@ -3,6 +3,9 @@
   padding-right: auto;
   width: 400px;
   height: 294px;
+  @media  #{$phone} {
+    width: 320px;
+  }
 }
 .form-tab {
   display: flex;
