@@ -5,6 +5,10 @@
   padding: 0px 20px;
   border-radius: 4px;
 }
+.btn-lg {
+  height: 48px;
+  width: 350px;
+}
 .btn-search {
   background-color: $highlight;
   border-top-left-radius: 0px;
@@ -47,4 +51,13 @@
 
 .br-0 {
   border-radius: 0!important;
+}
+.flex-btn {
+  width: 340px;
+  color: #ffffff;
+  background-color: #3e98f5;
+  align-self: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  border-radius: 3px;
 }

@@ -34,6 +34,14 @@
       }
     }
   }
+  .form-group {
+    width: 350px;
+    align-self: center;
+    font-size: 14px;
+    label {
+      color: #525c67;
+    }
+  }
 }
 .form-reset {
   border-radius: 0;

@@ -1,3 +1,6 @@
+.btn:hover {
+  cursor: pointer!important;
+}
 .bit-form {
   margin-right: auto;
   padding-right: auto;
@@ -7,6 +10,7 @@
     width: 320px;
   }
 }
+
 .form-tab {
   display: flex;
   flex-direction: row;

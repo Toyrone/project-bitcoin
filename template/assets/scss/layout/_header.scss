@@ -2,13 +2,19 @@
   padding: 42px 72px;
   background-color: $backg-dark;
   color: $brand-color;
+  &--light {
+    background-color: $backg-light;
+  }
   @media  #{$phone} {
     padding: 30px;
   }
 }
 .main-nav {
-  background-color:  $backg-dark;
+  background-color: $backg-dark;
   padding: 0;
+  &--light {
+    background-color: $backg-light;
+  }
   .navbar-brand.logo {
     display: flex;
     justify-content: center;
