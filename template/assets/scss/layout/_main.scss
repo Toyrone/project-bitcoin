@@ -206,5 +206,31 @@ main {
   margin: auto;
   margin-top: 114px;
   padding-top: 112px;
+  color: #525c67;
   padding-bottom: 187px;
+  &--lite {
+    padding-top: 32px;
+  }
+}
+.message {
+  display: flex;
+  width: 420px;
+  height: 50px;
+  border-radius: 3px;
+  border: solid 1px #3e98f5;
+  p {
+    margin: auto;
+    span {
+      color: #3e98f5;
+    }
+  }
+}
+.details {
+  padding-left: 32px;
+  padding-right: 32px;
+  color: rgba(82, 92, 103, 0.7);
+  .details-item {
+    padding: 32px 0;
+
+  }
 }

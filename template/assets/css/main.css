@@ -67,6 +67,22 @@ input {
   margin-top: 20px;
   text-transform: uppercase;
   border-radius: 3px; }
+  .flex-btn--sm {
+    width: 156px;
+    align-self: left; }
+
+input.form-control {
+  border-radius: 3px; }
+
+input.form-check {
+  height: 16px;
+  width: 16px; }
+
+input.form--add-on {
+  height: 38px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: solid 1px #ebebf2; }
 
 .btn:hover {
   cursor: pointer !important; }
@@ -105,6 +121,47 @@ input {
     background-color: #525c67; }
     .form-tab a:hover {
       text-decoration: none; }
+
+.form-title {
+  padding: 32px 54px; }
+
+.form-head {
+  color: #3e98f5;
+  text-transform: uppercase; }
+
+.form-meta {
+  color: #525c67; }
+
+.bar {
+  border-right: 1px solid #ebebeb; }
+
+.form-text {
+  display: flex;
+  flex-direction: row;
+  margin-left: 54px;
+  padding: 10px;
+  max-width: 350px; }
+  .form-text p {
+    font-size: 14px;
+    color: #525c67; }
+
+.form-radio {
+  padding-left: 54px; }
+  .form-radio legend {
+    padding-bottom: 36px;
+    font-size: 14px; }
+
+.radio-grp {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 24px;
+  font-size: 14px; }
+
+.select--add-on {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: 0px;
+  border: solid 1px #ebebf2; }
 
 footer {
   padding: 48px 72px 24px;
@@ -421,7 +478,28 @@ main {
   margin: auto;
   margin-top: 114px;
   padding-top: 112px;
+  color: #525c67;
   padding-bottom: 187px; }
+  .wrapper--lite {
+    padding-top: 32px; }
+
+.message {
+  display: flex;
+  width: 420px;
+  height: 50px;
+  border-radius: 3px;
+  border: solid 1px #3e98f5; }
+  .message p {
+    margin: auto; }
+    .message p span {
+      color: #3e98f5; }
+
+.details {
+  padding-left: 32px;
+  padding-right: 32px;
+  color: rgba(82, 92, 103, 0.7); }
+  .details .details-item {
+    padding: 32px 0; }
 
 .p-bold {
   font-size: 20px;
@@ -452,12 +530,17 @@ main {
       @media (min-width: 320px) and (max-width: 640px) {
         .flex .flex-grp .btn {
           padding: 10px; } }
-  .flex .form-group {
+  .flex .form-flex {
     width: 350px;
     align-self: center;
-    font-size: 14px; }
-    .flex .form-group label {
-      color: #525c67; }
+    font-size: 14px;
+    color: #525c67; }
+    .flex .form-flex--row {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: space-between; }
+      .flex .form-flex--row .form-group {
+        width: 167px; }
 
 .form-reset {
   border-radius: 0;

@@ -1,3 +1,18 @@
+input {
+  &.form-control {
+    border-radius: 3px;
+  }
+  &.form-check {
+    height: 16px;
+    width: 16px;
+  }
+  &.form--add-on {
+    height: 38px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: solid 1px #ebebf2;
+  }
+}
 .btn:hover {
   cursor: pointer!important;
 }
@@ -41,4 +56,48 @@
       text-decoration: none;
     }
   }
+}
+.form-title {
+  padding: 32px 54px
+}
+.form-head {
+  color: #3e98f5;
+  text-transform: uppercase;
+}
+.form-meta {
+  color: #525c67;
+
+}
+.bar {
+  border-right: 1px solid #ebebeb;
+}
+.form-text {
+  display: flex;
+  flex-direction: row;
+  margin-left: 54px;
+  padding: 10px;
+  max-width: 350px;
+  p {
+    font-size: 14px;
+    color: #525c67;
+  }
+}
+.form-radio {
+  padding-left: 54px;
+  legend {
+    padding-bottom: 36px;
+    font-size: 14px;
+  }
+}
+.radio-grp {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 24px;
+  font-size: 14px;
+}
+.select--add-on {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: 0px;
+  border: solid 1px #ebebf2;
 }
