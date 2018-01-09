@@ -1,12 +1,16 @@
 footer {
   padding: 48px 72px 24px;
   background-color: #222;
+  @media  #{$phone} {
+    padding: 30px;
+  }
 }
 .footer-links {
   color: #fff;
   font-size: 17px;
   list-style-type: none;
   text-transform: uppercase;
+  padding-bottom: 40px;
   .link-title {
     padding-bottom: 30px;
   }
@@ -33,6 +37,9 @@ footer {
 .foot-logos {
   padding-top: 166px;
   padding-bottom: 25px;
+  @media  #{$phone} {
+    padding-top: 0px;
+  }
 }
 .foot-logo {
   max-height: 25px;

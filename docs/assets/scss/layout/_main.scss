@@ -3,14 +3,24 @@ main {
 }
 .features {
   padding-top: 160px;
+  @media  #{$phone} {
+    padding-top: 50px;
+  }
 }
 .card {
   border: none;
   display: flex;
   flex-direction: row;
   padding: 0 28px 156px;
+
+  @media  #{$phone} {
+    padding: 0 0px 30px;
+  }
   .card-media {
     padding: 60px 32px 0 0;
+    @media  #{$phone} {
+      padding: 60px 10px 0 0;
+    }
   }
   .card-body {
     padding: 0;
@@ -19,7 +29,7 @@ main {
       color: #525c67;
       line-height: 1.64;
       font-size: 0.875rem;
-      width: 310px;
+      width: 300px;
     }
   }
   .card-title {
@@ -32,6 +42,9 @@ main {
 .partners {
   margin-top: 10px;
   padding-bottom: 120px;
+  @media  #{$phone} {
+    padding-bottom: 0;
+  }
 }
 .section-head {
   font-weight: bold;
@@ -39,6 +52,13 @@ main {
   text-align: center;
   padding-bottom: 75px;
   font-size: 32px;
+  @media  #{$phone} {
+    padding-bottom: 5px;
+    padding-top: 40px;
+    h3 {
+      line-height: 1.3;
+    }
+  }
 }
 .partner-wrap {
   display: flex;
@@ -46,8 +66,15 @@ main {
   justify-content: space-between;
   padding: 0 144px;
   flex: 1;
+  @media  #{$phone} {
+    flex-direction: column;
+    padding: 30px;
+  }
 }
 .partner-item {
+  @media  #{$phone} {
+    padding-bottom: 50px;
+  }
   p {
     white-space: wrap;
     color: #525c67;
@@ -57,7 +84,7 @@ main {
   }
 }
 .partner-logo {
-  max-height: 40px;
+  min-height: 40px;
   padding-bottom: 17px;
   img {
     height: auto;
@@ -68,6 +95,12 @@ main {
 .start {
   padding: 90px 247px 0px;
   background-color: #f2f3f5;
+  @media  #{$phone} {
+    padding: 30px;
+  }
+  .row-reverse {
+
+  }
 }
 .start-steps {
   display: flex;
@@ -108,6 +141,9 @@ main {
 }
 .testimonial {
   padding: 120px 247px 30px;
+  @media  #{$phone} {
+    padding: 30px;
+  }
 }
 .testimonial-body {
   text-align: center;
@@ -116,27 +152,85 @@ main {
     padding-bottom: 80px;
     text-align: justify;
     color: #525c67;
+    @media  #{$phone} {
+      text-align: center;
+      color: #525c67;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
   }
   button.btn {
     width: 150px;
     text-transform: uppercase;
   }
 }
-
+.start-img {
+  @media  #{$phone} {
+    width: 300px;
+  }
+}
 .media-partners {
   padding: 90px 247px 120px;
+  @media  #{$phone} {
+    padding: 30px;
+  }
 }
 .logo-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
+  @media  #{$phone} {
+    flex-direction: column;
+  }
 }
 .media-body {
-  margin: 0 auto
+  margin: 0 auto;
+  @media  #{$phone} {
+    padding-bottom: 70px;
+  }
 }
 .media-logo {
+  @media  #{$phone}{
+    padding-top: 30px;
+  }
   img {
     padding: 10px 45px;
+  }
+}
+.wrapper {
+  width: 945px;
+  // height: 780px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  margin: auto;
+  margin-top: 114px;
+  padding-top: 112px;
+  color: #525c67;
+  padding-bottom: 187px;
+  &--lite {
+    padding-top: 32px;
+  }
+}
+.message {
+  display: flex;
+  width: 420px;
+  height: 50px;
+  border-radius: 3px;
+  border: solid 1px #3e98f5;
+  p {
+    margin: auto;
+    span {
+      color: #3e98f5;
+    }
+  }
+}
+.details {
+  padding-left: 32px;
+  padding-right: 32px;
+  color: rgba(82, 92, 103, 0.7);
+  .details-item {
+    padding: 32px 0;
+
   }
 }
