@@ -299,7 +299,7 @@ footer {
     border-bottom-right-radius: 4px; }
     @media (min-width: 320px) and (max-width: 640px) {
       .main-nav .sub-nav {
-        background-color: #222; } }
+        background-color: #fff; } }
   .main-nav i {
     color: white; }
 
@@ -309,10 +309,15 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center; }
+  @media (min-width: 320px) and (max-width: 640px) {
+    .nav-item {
+      color: #222 !important;
+      align-content: left;
+      justify-content: flex-start; } }
   .nav-item.active {
     border-top: 3px solid #fff; }
   .nav-item a.nav-link {
-    color: #fff !important;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 100;
     opacity: 0.7;
