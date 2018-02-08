@@ -6,24 +6,24 @@ var browserSync = require('browser-sync').create();
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'template'
+      baseDir: 'docs'
     }
   })
 })
 
 gulp.task('sass', function() {
-  gulp.src('template/assets/scss/**/*.scss')
+  gulp.src('docs/assets/scss/**/*.scss')
     .pipe(concat('main.scss'))
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('template/assets/css'))
+    .pipe(gulp.dest('docs/assets/css'))
     .pipe(browserSync.reload({
       stream: true
     }));
 });
 
 gulp.task('default',['sass','browserSync'], function() {
-  gulp.watch( 'template/assets/scss/**/*.scss', ['sass'] );
-  gulp.watch( 'template/assets/scss/**/*.scss', browserSync.reload);
-  gulp.watch( 'template/assets/js/**/*.js', browserSync.reload);
-  gulp.watch( 'template/*.html').on('change', browserSync.reload);
+  gulp.watch( 'docs/assets/scss/**/*.scss', ['sass'] );
+  gulp.watch( 'docs/assets/scss/**/*.scss', browserSync.reload);
+  gulp.watch( 'docs/assets/js/**/*.js', browserSync.reload);
+  gulp.watch( 'docs/*.html').on('change', browserSync.reload);
 });

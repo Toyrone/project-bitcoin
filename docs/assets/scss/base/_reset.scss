@@ -5,9 +5,17 @@ body {
   margin: 0;
   background-color: $brand-color;
   font-size: $base-font-size;
+  font-family: $open-sans
 }
 input {
   overflow: visible;
   width: 100%;
   height: 48px;
+  border-radius: 0!important;
+}
+select:required:invalid {
+  color: #9b9b9b;
+}
+option[value=""][disabled] {
+  display: none;
 }

@@ -36,8 +36,8 @@ input {
   align-items: center;
   margin-bottom: 0;
   &.active {
-    color: #9b9b9b;
-    background-color: #fff;
+    color: #fff;
+    background-color: $highlight;
   }
 
   li {
@@ -50,8 +50,9 @@ input {
   a {
     width: 100%;
     height: 100%;
-    color: #fff;
-    background-color: #525c67;
+    color: #9b9b9b;
+    background-color: #fff;
+    transition: all 0.5s;
     &:hover {
       text-decoration: none;
     }
