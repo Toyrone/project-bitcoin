@@ -317,7 +317,7 @@ footer {
   .nav-item.active {
     border-top: 3px solid #fff; }
   .nav-item a.nav-link {
-    color: #fff;
+    color: #fff !important;
     text-transform: uppercase;
     font-weight: 100;
     opacity: 0.7;
