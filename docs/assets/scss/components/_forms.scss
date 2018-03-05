@@ -21,6 +21,8 @@ input {
   padding-right: auto;
   width: 400px;
   height: 294px;
+  border-radius: 8px;
+  overflow: hidden;
   @media  #{$phone} {
     width: 320px;
   }

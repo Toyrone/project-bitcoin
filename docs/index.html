@@ -24,43 +24,70 @@
         <![endif]-->
     <div class="header">
       <nav class="navbar navbar-expand-lg navbar-light main-nav">
-        <a class="navbar-brand logo" href="#">Logo</a>
+        <a class="navbar-brand logo" href="index.html">
+          <img src="assets/img/logos/senex-logo.png" alt="Light-version of the SenEx Logo">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse sub-nav" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto sub-nav__list">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bulk Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Chart</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Signup</a>
-            </li>
-            <button class="btn btn-default btn-search"><i class="fa fa-search"></i></button>
+            <!-- <button class="btn btn-default btn-search"><i class="fa fa-search"></i></button> -->
           </ul>
         </div>
       </nav>
 
+      <div class="row">
+        <div class="container-fluid">
+          <div class="trade">
+            <div class="trade__rates shadowed">
+              <p>Buy: <span class="text-dark">&#8358;400</span></p>
+              <p>Sell: <span class="text-dark">&#8358;330</span></p>
+            </div>
+
+            <div class="trade__index shadowed">
+              <ul class="crypto__index">
+                <li class="crypto__item">Btc <span class="text-dark" id="index-btc">&#36; 11,500</span></li>
+                <li class="crypto__item">Ltc <span class="text-dark" id="index-ltc">&#36; 9,500</span></li>
+                <li class="crypto__item">Bch <span class="text-dark" id="index-bitcash">&#36; 1,500</span></li>
+                <li class="crypto__item">Eth <span class="text-dark" id="index-eth">&#36; 1,200</span></li>
+                <li class="crypto__item">Neo <span class="text-dark" id="index-neo">&#36; 120</span></li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
       <div class="hero hero--banner">
         <div class="hero-title">
           <h1 class="hero-title__main">Exchanging currencies made easy</h1>
-          <p class="hero-title__sub">Buy and sell instantly with <span class="highlight">SenX Trader</span></p>
+          <p class="hero-title__sub">Buy and sell instantly with SenX Trader</p>
         </div>
       </div>
 
       <div class="row row--hero">
         <div class="col-md-6">
-          <div class="bit-form">
+          <div class="bit-form shadowed">
             <div class="form-group ps-0">
               <select class="form-control form-reset" name="">
                 <option value="" disabled selected>Select a crypto currency</option>
@@ -119,22 +146,55 @@
     </div>
 
     <footer class="footer">
-      <div class="footer__main">
-        <div class="footer__crypto">
-          <ul class="crypto__index">
-            <li class="crypto__item">Bitcoin &#36;<span id="index-btc">11,500</span></li>
-            <li class="crypto__item">Litecoin &#36;<span id="index-ltc">9,500</span></li>
-            <li class="crypto__item">Bitcoin cash &#36;<span id="index-bitcash">1,500</span></li>
-            <li class="crypto__item">Ethereum &#36;<span id="index-eth">1,200</span></li>
-            <li class="crypto__item">NEO &#36;<span id="index-neo">120</span></li>
-          </ul>
-        </div>
-        <div class="footer__social-links">
-          <a href=""><i class="fa fa-2x fa-facebook-square"></i></a>
-          <a href=""><i class="fa fa-2x fa-twitter"></i></a>
-          <a href=""><i class="fa fa-2x fa-instagram"></i></a>
+      <div class="container-fluid">
+        <div class="row footer__main">
+          <div class="col-md-3 footer__col">
+            Legal
+            <ul class="footer__col--list">
+              <li>Privacy Policy</li>
+              <li>Risk Disclosure Policy</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 footer__col">
+            Payment methods
+            <ul class="footer__col--list">
+              <li>MasterCard</li>
+              <li>Visa</li>
+              <li>Verve</li>
+              <li>Bank Wire Transfer</li>
+              <li>InterSwitch</li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 footer__col">
+            Join us on
+            <div class="footer__social-links">
+               <a href="#"><i class="fa fa-facebook-square"></i></a>
+               <a href="#"><i class="fa fa-twitter"></i></a>
+               <a href="#"><i class="fa fa-instagram"></i></a>
+               <a href="#"><i class="fa fa-youtube"></i></a>
+             </div>
+
+            <div class="form-foot">
+              Join our mailing list  Never miss an update
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <label for="subscribe-email">
+                      <input class="form-control foot-input" type="text" name="email" id="subscribe-email" placeholder="Email Address">
+                    </label>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-foot" type="button" name="button">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
+        <p>Copyright &copy; 2016-2018 SenEx Info. Tech. Limited. All rights reserved.</p>
     </footer>
 
     <script src="assets/vendors/js/jquery-1.11.2.min.js"></script>

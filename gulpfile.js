@@ -13,7 +13,6 @@ gulp.task('browserSync', function() {
 
 gulp.task('sass', function() {
   gulp.src('docs/assets/scss/**/*.scss')
-    .pipe(concat('main.scss'))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('docs/assets/css'))
     .pipe(browserSync.reload({

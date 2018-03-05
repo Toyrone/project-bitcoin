@@ -1,5 +1,16 @@
 @import 'node_modules/normalize-scss/sass/normalize';
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_reset";
 
-@import 'base/variables';
+@import "layout/_header";
+@import "layout/_main";
+@import "layout/_footer";
+
+@import "components/_buttons";
+@import "components/_forms";
+
+@import "modules/utils";
+
 
 // @import 'components/buttons';

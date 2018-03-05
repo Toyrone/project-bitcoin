@@ -1,7 +1,7 @@
 .header {
-  padding: 42px 72px;
-  background-color: $brand-color;
-  color: $brand-color;
+  max-width: 980px;
+  margin: 0 auto;
+  color: $highlight;
   &--light {
     background-color: $backg-light;
   }
@@ -11,7 +11,10 @@
 }
 .main-nav {
   background-color: $brand-color;
+  color: $highlight;
   padding: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  min-height: 84px;
   &--light {
     background-color: $backg-light;
   }
@@ -22,13 +25,18 @@
     height: 70px;
     width: 250px;
     border-radius: 4px;
-    background-color: $highlight;
     margin: 0;
   }
   .sub-nav {
-    background-color: $backg-dark;
+    background-color: $brand-color;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    &__list {
+      padding: 5px 0;
+      margin-right: 10px;
+      border-top: 1px solid $highlight;
+      border-bottom: 1px solid $highlight
+    }
     @media  #{$phone} {
       background-color: $brand-color;
     }
@@ -40,7 +48,7 @@
 
 
 .nav-item {
-  color: $brand-color;
+  color: $highlight;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,13 +62,13 @@
     border-top: 3px solid #fff;
   }
   a.nav-link {
-    color: $brand-color!important;
+    color: $highlight!important;
     text-transform: uppercase;
     font-weight: 100;
     opacity: 0.7;
     font-size: 0.875rem;
-    padding-left: 1rem!important;
-    padding-right: 1rem!important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
 
 } // /nav-item
@@ -69,14 +77,15 @@
   margin-top: 90px;
   &--banner { //hero--banner
     position: relative;
+    border-top: 1px solid $brand-color;
     &:before {
       content: '';
       position: absolute;
-      background-image: url(../img/mockup.jpg);
+      background-image: url(../img/Phone-mock.png);
       background-size: contain;
-      top: -30px;
-      right: 0;
-      width: 500px;
+      top: 20px;
+      right: -350px;
+      width: 600px;
       height: 451px;
       background-repeat: no-repeat;
       @media  #{$phone} {
@@ -86,13 +95,16 @@
   }
   .hero-title {
     padding-bottom: 25px;
-    color: $header-color;
+        color: $brand-color;
     &__main {
       font-family: $roboto;
     }
     &__sub {
       font-family: $open-sans;
       font-size: 24px;
+      width: 450px;
+      border-bottom: 1px solid $brand-color;
+      padding-bottom: 10px;
       .highlight {
         color: $highlight;
       }
@@ -127,6 +139,33 @@
     @media  #{$phone} {
       width: 320px;
       text-align: center;
+    }
+  }
+}
+
+.trade {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  &__rates {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    p {
+      padding: 0 15px;
+      margin: 0;
+    }
+  }
+  &__index {
+    .crypto__index {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      margin-bottom: 0;
+      padding: 10px;
+    }
+    .crypto__item {
+      padding: 0 10px;
     }
   }
 }
