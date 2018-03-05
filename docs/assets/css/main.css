@@ -118,7 +118,7 @@ option[value=""][disabled] {
       margin-top: 40px; } }
 
 .row--hero {
-  margin-bottom: 124px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row; }
   @media (min-width: 320px) and (max-width: 640px) {
