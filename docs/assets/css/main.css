@@ -121,9 +121,10 @@ option[value=""][disabled] {
   margin-bottom: 30px;
   display: flex;
   flex-direction: row; }
-  @media (min-width: 320px) and (max-width: 640px) {
-    .row--hero {
-      margin-bottom: 40px; } }
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .row {
+    margin-bottom: 40px; } }
 
 .chart-wrap {
   float: right; }
@@ -380,6 +381,33 @@ main {
     padding-left: 5px; }
   .row-flex .col-form:not(:last-child) {
     padding-right: 5px; }
+
+.body__main {
+  color: #fff;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 75px;
+  font-weight: normal; }
+
+.body__title h3 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff; }
+
+.body__content {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  padding: 30px 40px;
+  background-color: rgba(255, 255, 255, 0.15); }
+
+.contact {
+  display: flex;
+  flex-direction: row; }
+  .contact__inquiries {
+    padding: 0 30px; }
+  .contact__link {
+    list-style-type: none;
+    padding-top: 30px; }
+  .contact__form {
+    background-color: transparent; }
 
 .footer-links {
   color: #fff;
@@ -667,6 +695,14 @@ input.form--add-on {
   border-bottom-left-radius: 0px;
   border-left: 0px;
   border: solid 1px #ebebf2; }
+
+.form__input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 14px; }
+  .form__input::placeholder {
+    color: rgba(255, 255, 255, 0.8); }
 
 .p-bold {
   font-size: 20px;

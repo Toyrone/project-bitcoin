@@ -246,3 +246,38 @@ main {
     }
   }
 }
+.body {
+  &__main {
+    color: $brand-color;
+    max-width: 980px;
+    margin: 0 auto;
+    padding-top: 75px;
+    font-weight: normal;
+  }
+  &__title {
+    h3 {
+      padding-bottom: 15px;
+      border-bottom: 1px solid $brand-color;
+    }
+  }
+  &__content {
+    // background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 30px 40px;
+    background-color: rgba(255,255,255,0.15);
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  &__inquiries {
+    padding: 0 30px;
+  }
+  &__link {
+    list-style-type: none;
+    padding-top: 30px;
+  }
+  &__form {
+    background-color: transparent;
+  }
+}

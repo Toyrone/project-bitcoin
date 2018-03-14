@@ -114,10 +114,12 @@
     margin-top: 40px;
   }
 }
-.row--hero {
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: row;
+.row {
+  &--hero {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+  }
   @media  #{$phone} {
     margin-bottom: 40px
   }
