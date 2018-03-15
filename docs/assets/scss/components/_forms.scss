@@ -109,6 +109,11 @@ input {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   font-size: 14px;
+  color: $brand-color!important;
+  &:focus {
+    border-bottom-width: 2px;
+    outline: none;
+  }
   &::placeholder {
     color: rgba(255, 255, 255, 0.8);
   }

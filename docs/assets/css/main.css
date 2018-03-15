@@ -407,7 +407,22 @@ main {
     list-style-type: none;
     padding-top: 30px; }
   .contact__form {
-    background-color: transparent; }
+    background-color: transparent;
+    max-width: 600px;
+    margin: 0 auto; }
+
+.faq__title {
+  font-size: 32px;
+  padding-bottom: 30px; }
+
+.faq__questions {
+  font-size: 1rem; }
+  .faq__questions__item h5 {
+    font-size: 1.3em;
+    padding: 20px 0; }
+
+.faq__details {
+  line-height: 1.7; }
 
 .footer-links {
   color: #fff;
@@ -534,7 +549,7 @@ main {
     height: 36px;
     width: 250px;
     border-radius: 0; }
-  .form-foot .btn-foot {
+  .form-foot .btn-foot, .form-foot .btn-contact {
     height: 36px;
     width: 150px;
     border-radius: 0;
@@ -700,7 +715,11 @@ input.form--add-on {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  font-size: 14px; }
+  font-size: 14px;
+  color: #fff !important; }
+  .form__input:focus {
+    border-bottom-width: 2px;
+    outline: none; }
   .form__input::placeholder {
     color: rgba(255, 255, 255, 0.8); }
 
@@ -794,3 +813,16 @@ input.form--add-on {
 .shadowed {
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
+
+.input-group label {
+  width: 100% !important; }
+
+.input-group-ta textarea {
+  min-height: 128px;
+  width: 100%;
+  resize: none; }
+
+.btn-contact {
+  color: #fff;
+  background-color: transparent;
+  font-size: 20px; }

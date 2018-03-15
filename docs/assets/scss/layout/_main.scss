@@ -279,5 +279,26 @@ main {
   }
   &__form {
     background-color: transparent;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+.faq {
+  &__title {
+    font-size: 32px;
+    padding-bottom: 30px;
+  }
+  &__questions {
+    font-size: 1rem;
+    &__item {
+      h5 {
+        font-size: 1.3em;
+        padding: 20px 0;
+      }
+    }
+  }
+  &__details {
+    line-height: 1.7;
+    // display: none;
   }
 }
