@@ -16,3 +16,7 @@ $('.btn-grp').on('click', function() {
 })
 
 // this.classList.toggle('active');
+$('.faq__questions__item').on('click', function() {
+  $(this).children('.faq__details').slideToggle();
+  $(this).toggleClass('active');
+})
