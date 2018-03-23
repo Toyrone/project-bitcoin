@@ -1,6 +1,6 @@
 .header {
   padding: 42px 72px;
-  background-color: $brand-color;
+  background-color: #222;
   color: $brand-color;
   &--light {
     background-color: $backg-light;
@@ -10,7 +10,7 @@
   }
 }
 .main-nav {
-  background-color: $brand-color;
+  background-color: #222;
   padding: 0;
   &--light {
     background-color: $backg-light;
@@ -113,7 +113,7 @@
 .chart-wrap {
   float: right;
   img {
-    width: 500px;
+    width: 450px;
     height: auto;
   }
   @media  #{$phone} {

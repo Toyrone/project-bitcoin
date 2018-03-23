@@ -271,7 +271,7 @@ footer {
 
 .header {
   padding: 42px 72px;
-  background-color: #fff;
+  background-color: #222;
   color: #fff; }
   .header--light {
     background-color: #f5f5f5; }
@@ -280,7 +280,7 @@ footer {
       padding: 30px; } }
 
 .main-nav {
-  background-color: #fff;
+  background-color: #222;
   padding: 0; }
   .main-nav--light {
     background-color: #f5f5f5; }
@@ -367,7 +367,7 @@ footer {
 .chart-wrap {
   float: right; }
   .chart-wrap img {
-    width: 500px;
+    width: 450px;
     height: auto; }
   @media (min-width: 320px) and (max-width: 640px) {
     .chart-wrap {
@@ -620,8 +620,7 @@ main {
 
 .flex {
   display: flex;
-  flex-direction: column;
-  padding-top: 5px; }
+  flex-direction: column; }
   .flex .flex-grp {
     flex: 100%;
     display: flex;
